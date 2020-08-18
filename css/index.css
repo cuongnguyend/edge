@@ -159,7 +159,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     position: absolute;
-    top: 50%;
+    bottom: 35%;
     left: 10%;
 }
 
