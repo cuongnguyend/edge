@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+    z-index: 1;
+}
+
+.linkTitle,
+.news,
+.tools,
+.search,
+.current {
+    z-index: 999;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 20px;
+    align-items: center;
+    color: #e7e7e8;
+}
+
+.tools .menu {
+    display: flex;
+    align-items: center;
+}
+
+.tools .menu .bt_menu {
+    background-color: none;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 5px 7px;
+    border-radius: 2px;
+}
+
+.tools .menu .bt_menu:hover {
+    background: rgba(43, 43, 43, 0.8);
+}
+
+.tools .menu .cloudy {
+    padding-right: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.tools .menu .temp {
+    cursor: pointer;
+}
+
+.tools .menu .temp .value {
+    font-size: 25px;
+}
+
+.tools .menu .temp .change {
+    font-size: 15px;
+}
+
+.tools .menu .temp .F {
+    display: none;
+}
+
+.tools .menu .temp:hover .F {
+    display: inline-block;
+}
+
+.tools .setting {
+    color: #e7e7e8;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.tools .setting:hover {
+    background: rgba(48, 48, 48, 0.8);
+}
+
+.search {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.searchTerm {
+    width: 80%;
+    border: 1px solid #bebebe;
+    border-right: none;
+    padding: 5px;
+    height: 25px;
+    padding-top: 7px;
+    border-radius: 2px 0 0 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.search i {
+    font-size: 25px;
+    line-height: 32px;
+    transform: rotateZ(90deg);
+    font-weight: lighter;
+}
+
+.search .searchButton {
+    width: 40px;
+    height: 39px;
+    border: 1px solid #bebebe;
+    border-left: none;
+    background: white;
+    text-align: center;
+    color: #4b98d8;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+}
+
+.search div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 37px;
+    border: 1px solid #bebebe;
+    border-left: none;
+    border-right: none;
+    background: white;
+    text-align: center;
+    color: #4b98d8;
+    cursor: pointer;
+    outline: none;
+}
+
+.current {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.current .web_current {
+    display: flex;
+    flex-flow: column;
+    border-radius: 4px;
+    background: white;
+    text-overflow: ellipsis;
+    /* padding: 5px; */
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.current .web_current a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: black;
+    text-align: center;
+}
+
+.current .web_current img {
+    max-height: 26px;
+    object-fit: contain;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.current .web_current i {
+    display: none !important;
+    text-align: right;
+    color: gray;
+    font-size: small;
+    display: inline;
+    line-height: 10px;
+}
+
+.current .web_current:hover i {
+    display: inline-block;
+}
+
+.current .plus i {
+    margin: auto;
+    font-size: 35px;
+    display: block !important;
+}
+
+.linkTitle {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 5%;
+    position: absolute;
+    bottom: 10%;
+}
+
+.linkTitle svg {
+    height: 14px;
+    font-size: 20px;
+    line-height: 18px;
+    top: 1px;
+    width: 20px;
+    padding-right: 10px;
+}
+
+.linkTitle a {
+    font-size: 13px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.news {
+    width: 100%;
+    background: #101218;
+}
+
+.list {
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    color: #e7e7e7;
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 85px;
+}
+
+.list i {
+    font-size: 10px;
+}
+
+.list div:last-child {
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+.list .m span {
+    border-bottom: 3px solid #0362ac;
+}
+
+.list div:last-child span {
+    color: rgb(112, 112, 112);
+}
+
+.list div:last-child:hover {
+    background: none;
+}
+
+.list div {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.list div:hover {
+    background: rgb(112, 112, 112);
+}
